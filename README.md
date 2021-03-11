@@ -4,6 +4,8 @@ Prints out a quine with n variables
 
 ## Installation
 
+Go into the Julia REPL, and press ] to go into pkg mode
+
 ```julia
 (@v1.5) pkg> add https://github.com/jin-park/Quine.jl.git
 julia> using Quine
@@ -31,4 +33,4 @@ eval(a)
 
 ## Well why should I care?
 
-Definition of quine from wikipedia: A **quine** is a computer program which takes no input and produces a copy of its own source code as its only output. If that isn't the coolest thing ever then I don't know what is.
+Definition of a quine from wikipedia: A **quine** is a computer program which takes no input and produces a copy of its own source code as its only output. If that isn't the coolest thing ever then I don't know what is.
