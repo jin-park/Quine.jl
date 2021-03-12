@@ -16,8 +16,7 @@ module Quine
             return
         end
         push!(lines, "a = :(eval(b))")
-        push!(lines, "b = :(eval(c); println(\"a = :(eval(b))\\neval(a)\"))")
-        for i in 3:n - 1
+        for i in 2:n - 1
             previous_string = escape(lines[i - 1])
             push!(lines, "$(variable_names[i]) = :(eval($(variable_names[i + 1])); println(\"$(previous_string)\"))")
         end
